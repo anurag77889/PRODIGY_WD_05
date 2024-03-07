@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="icon" type="image/x-icon" href="/images/lomgo.png">
+    <link rel="icon" type="image/x-icon" href="lomgo.png">
     <link rel="stylesheet" href="weather.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 
 <body>
     <div class="topnav">
-        <span id="logo"><img src="/images/lomgo.png" alt="weather-app-logo"></span>
+        <span id="logo"><img src="lomgo.png" alt="weather-app-logo"></span>
         <span id="heading"><a href="">Weather</a></span>
         <div class="search-container">
             <input type="text" placeholder="City Name" spellcheck="false">
@@ -49,15 +49,15 @@ async function checkWeather(city){
     let temperature = (Math.round(data.main.temp) - 273);
     let typeofWeather = data.weather[0].main;
     if(typeofWeather == "Smoke"){
-        document.querySelector("body").style.backgroundImage = "url(/images/storm-weather.jpg)";
+        document.querySelector("body").style.backgroundImage = "url(storm-weather.jpg)";
         document.querySelector(".topnav").style.backgroundSize = "0 0";
     }
     if(typeofWeather == "Clouds"){
-        document.querySelector("body").style.backgroundImage = "url(/images/clouds-weather.jpg)";
+        document.querySelector("body").style.backgroundImage = "url(clouds-weather.jpg)";
         document.querySelector(".topnav").style.backgroundSize = "0 0";
     }
     if(typeofWeather == "Clear"){
-        document.querySelector("body").style.backgroundImage = "url(/images/clear-weather.jpg)";
+        document.querySelector("body").style.backgroundImage = "url(clear-weather.jpg)";
         document.querySelector(".topnav").style.backgroundSize = "0 0";
     }
     document.querySelector(".cityname").innerHTML = data.name;
