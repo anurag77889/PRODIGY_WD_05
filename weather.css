@@ -11,8 +11,7 @@ body{
 }
 .topnav{
     overflow: hidden;
-    background-image: url("navbar-background.jpg");
-    background-repeat: no-repeat;
+    background-color: aquamarine;
 }
 .topnav .search-container{
     display: flex;
