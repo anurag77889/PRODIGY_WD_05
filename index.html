@@ -50,15 +50,15 @@ async function checkWeather(city){
     let typeofWeather = data.weather[0].main;
     if(typeofWeather == "Smoke"){
         document.querySelector("body").style.backgroundImage = "url(storm-weather.jpg)";
-        document.querySelector(".topnav").style.backgroundSize = "0 0";
+        document.querySelector(".topnav").style.backgroundColor = "transparent";
     }
     if(typeofWeather == "Clouds"){
         document.querySelector("body").style.backgroundImage = "url(clouds-weather.jpg)";
-        document.querySelector(".topnav").style.backgroundSize = "0 0";
+        document.querySelector(".topnav").style.backgroundColor = "transparent";
     }
     if(typeofWeather == "Clear"){
         document.querySelector("body").style.backgroundImage = "url(clear-weather.jpg)";
-        document.querySelector(".topnav").style.backgroundSize = "0 0";
+        document.querySelector(".topnav").style.backgroundColor = "transparent";
     }
     document.querySelector(".cityname").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = temperature +  " °C";
